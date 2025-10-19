@@ -8300,7 +8300,7 @@ void Player::onThink(uint32_t interval) {
 	wheel()->onThink();
 
 	g_callbacks().executeCallback(EventCallback_t::playerOnThink, &EventCallback::playerOnThink, getPlayer(), interval);
-	
+
 	// Execute batch inventory updates if scheduled
 	if (batchInventoryUpdateScheduled) {
 		executeBatchInventoryUpdate();

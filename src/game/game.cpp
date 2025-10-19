@@ -3195,18 +3195,18 @@ bool Game::handleFallbackLogic(const std::shared_ptr<Player> &player, std::share
 ReturnValue Game::processMoveOrAddItemToLootContainer(const std::shared_ptr<Item> &item, const std::shared_ptr<Container> &lootContainer, uint32_t &remainderCount, const std::shared_ptr<Player> &player) {
 	std::shared_ptr<Item> moveItem = nullptr;
 	ReturnValue ret;
-	
+
 	// Optimize: Skip unnecessary checks for auto loot
 	if (item->getParent()) {
 		ret = internalMoveItem(item->getParent(), lootContainer, INDEX_WHEREEVER, item, item->getItemCount(), &moveItem, 0, player, nullptr, false);
 	} else {
 		ret = internalAddItem(lootContainer, item, INDEX_WHEREEVER);
 	}
-	
+
 	if (moveItem) {
 		remainderCount -= moveItem->getItemCount();
 	}
-	
+
 	return ret;
 }
 
