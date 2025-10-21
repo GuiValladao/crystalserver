@@ -6076,28 +6076,34 @@ void Game::playerSetFightModes(uint32_t playerId, FightMode_t fightMode, PvpMode
 	player->setFightMode(fightMode);
 	player->setChaseMode(chaseMode);
 
-	if (g_configManager().getBoolean(TOGGLE_EXPERT_PVP)) {
+	bool expertPvpActive = g_configManager().getBoolean(TOGGLE_EXPERT_PVP) || (worldType == WORLDTYPE_HARDCORE);
+	if (expertPvpActive) {
 		auto oldPvpMode = player->pvpMode;
-		// Black skull cannot activate Red Fist
-		if (player->getSkull() == SKULL_BLACK && pvpMode == PVP_MODE_RED_FIST) {
-			player->setPvpMode(oldPvpMode);
-		} else if (worldType == WORLDTYPE_OPTIONAL && pvpMode == PVP_MODE_RED_FIST) {
-			player->setPvpMode(player->pvpMode);
-		} else if (worldType == WORLDTYPE_HARDCORE && pvpMode != PVP_MODE_RED_FIST) {
+		
+		// In Hardcore worlds, force Red Fist mode and disable secure mode
+		if (worldType == WORLDTYPE_HARDCORE) {
 			player->setPvpMode(PVP_MODE_RED_FIST);
+			player->setSecureMode(false);
 		} else {
-			player->setPvpMode(pvpMode);
-		}
-
-		if ((worldType == WORLDTYPE_OPTIONAL && !secureMode) || (worldType == WORLDTYPE_HARDCORE && secureMode)) {
-			player->setSecureMode(!secureMode);
-		} else {
-			if (player->getPvPMode() == PVP_MODE_RED_FIST && oldPvpMode != PVP_MODE_RED_FIST) {
-				player->setSecureMode(false);
-			} else if (player->pvpMode != PVP_MODE_RED_FIST && oldPvpMode == PVP_MODE_RED_FIST) {
-				player->setSecureMode(true);
+			// Black skull cannot activate Red Fist
+			if (player->getSkull() == SKULL_BLACK && pvpMode == PVP_MODE_RED_FIST) {
+				player->setPvpMode(oldPvpMode);
+			} else if (worldType == WORLDTYPE_OPTIONAL && pvpMode == PVP_MODE_RED_FIST) {
+				player->setPvpMode(player->pvpMode);
 			} else {
-				player->setSecureMode(secureMode);
+				player->setPvpMode(pvpMode);
+			}
+
+			if (worldType == WORLDTYPE_OPTIONAL && !secureMode) {
+				player->setSecureMode(!secureMode);
+			} else {
+				if (player->getPvPMode() == PVP_MODE_RED_FIST && oldPvpMode != PVP_MODE_RED_FIST) {
+					player->setSecureMode(false);
+				} else if (player->pvpMode != PVP_MODE_RED_FIST && oldPvpMode == PVP_MODE_RED_FIST) {
+					player->setSecureMode(true);
+				} else {
+					player->setSecureMode(secureMode);
+				}
 			}
 		}
 
