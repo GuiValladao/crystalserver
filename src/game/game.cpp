@@ -6079,7 +6079,7 @@ void Game::playerSetFightModes(uint32_t playerId, FightMode_t fightMode, PvpMode
 	bool expertPvpActive = g_configManager().getBoolean(TOGGLE_EXPERT_PVP) || (worldType == WORLDTYPE_HARDCORE);
 	if (expertPvpActive) {
 		auto oldPvpMode = player->pvpMode;
-		
+
 		// In Hardcore worlds, force Red Fist mode and disable secure mode
 		if (worldType == WORLDTYPE_HARDCORE) {
 			player->setPvpMode(PVP_MODE_RED_FIST);

@@ -6342,7 +6342,7 @@ void Player::onAttackedCreature(const std::shared_ptr<Creature> &target) {
 		// Apply PvP mode specific rules for pz lock and skull
 		bool shouldPzLock = false;
 		bool shouldYellowSkull = false;
-		
+
 		// In Hardcore worlds, always apply pz lock rules
 		if (g_game().getWorldType() == WORLDTYPE_HARDCORE) {
 			shouldPzLock = true;
@@ -6355,28 +6355,28 @@ void Player::onAttackedCreature(const std::shared_ptr<Creature> &target) {
 					shouldYellowSkull = false;
 					break;
 				}
-				
+
 				case PVP_MODE_WHITE_HAND: {
 					// White Hand: No pz lock, but yellow skull for target
 					shouldPzLock = false;
 					shouldYellowSkull = true;
 					break;
 				}
-				
+
 				case PVP_MODE_YELLOW_HAND: {
 					// Yellow Hand: pz lock and yellow skull for target
 					shouldPzLock = true;
 					shouldYellowSkull = true;
 					break;
 				}
-				
+
 				case PVP_MODE_RED_FIST: {
 					// Red Fist: pz lock, no yellow skull (can attack anyone)
 					shouldPzLock = true;
 					shouldYellowSkull = false;
 					break;
 				}
-				
+
 				default:
 					shouldPzLock = false;
 					shouldYellowSkull = false;
