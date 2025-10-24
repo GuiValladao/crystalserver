@@ -9089,7 +9089,9 @@ std::string Game::generateVocationConditionHighscore(uint32_t searchVocationBase
 	std::ostringstream ss;
 	ss << " AND (";
 	for (size_t i = 0; i < ids.size(); ++i) {
-		if (i) ss << " OR ";
+		if (i) {
+			ss << " OR ";
+		}
 		ss << "`vocation` = " << ids[i];
 	}
 	ss << ")";
