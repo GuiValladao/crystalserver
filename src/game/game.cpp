@@ -3193,6 +3193,32 @@ bool Game::handleFallbackLogic(const std::shared_ptr<Player> &player, std::share
 }
 
 ReturnValue Game::processMoveOrAddItemToLootContainer(const std::shared_ptr<Item> &item, const std::shared_ptr<Container> &lootContainer, uint32_t &remainderCount, const std::shared_ptr<Player> &player) {
+	// Send money to the bank if AUTOBANK is enabled
+	if (g_configManager().getBoolean(AUTOBANK)) {
+		if (item->getID() == ITEM_GOLD_COIN || item->getID() == ITEM_PLATINUM_COIN || item->getID() == ITEM_CRYSTAL_COIN) {
+			uint64_t money = 0;
+			if (item->getID() == ITEM_PLATINUM_COIN) {
+				money = item->getItemCount() * 100;
+			} else if (item->getID() == ITEM_CRYSTAL_COIN) {
+				money = item->getItemCount() * 10000;
+			} else {
+				money = item->getItemCount();
+			}
+			auto parent = item->getParent();
+			if (parent) {
+				parent->removeThing(item, item->getItemCount());
+			} else {
+				g_logger().debug("Item has no parent");
+				return RETURNVALUE_NOTPOSSIBLE;
+			}
+			player->setBankBalance(player->getBankBalance() + money);
+			player->sendTextMessage(MESSAGE_STATUS, fmt::format("{} gold has been added to your bank account.", money));
+			g_metrics().addCounter("balance_increase", money, { { "player", player->getName() }, { "context", "loot" } });
+			remainderCount = 0;
+			return RETURNVALUE_NOERROR;
+		}
+	}
+
 	std::shared_ptr<Item> moveItem = nullptr;
 	ReturnValue ret;
 
@@ -3235,30 +3261,6 @@ ReturnValue Game::processLootItems(const std::shared_ptr<Player> &player, std::s
 ReturnValue Game::internalCollectManagedItems(const std::shared_ptr<Player> &player, const std::shared_ptr<Item> &item, ObjectCategory_t category, bool isLootContainer /* = true*/) {
 	if (!player || !item) {
 		return RETURNVALUE_NOTPOSSIBLE;
-	}
-
-	// Send money to the bank
-	if (g_configManager().getBoolean(AUTOBANK)) {
-		if (item->getID() == ITEM_GOLD_COIN || item->getID() == ITEM_PLATINUM_COIN || item->getID() == ITEM_CRYSTAL_COIN) {
-			uint64_t money = 0;
-			if (item->getID() == ITEM_PLATINUM_COIN) {
-				money = item->getItemCount() * 100;
-			} else if (item->getID() == ITEM_CRYSTAL_COIN) {
-				money = item->getItemCount() * 10000;
-			} else {
-				money = item->getItemCount();
-			}
-			auto parent = item->getParent();
-			if (parent) {
-				parent->removeThing(item, item->getItemCount());
-			} else {
-				g_logger().debug("Item has no parent");
-				return RETURNVALUE_NOTPOSSIBLE;
-			}
-			player->setBankBalance(player->getBankBalance() + money);
-			g_metrics().addCounter("balance_increase", money, { { "player", player->getName() }, { "context", "loot" } });
-			return RETURNVALUE_NOERROR;
-		}
 	}
 
 	if (!player->quickLootListItemIds.empty()) {
