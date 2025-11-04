@@ -11774,8 +11774,8 @@ void Game::checkFreeTown(const std::shared_ptr<Player> &player) {
 		return;
 	}
 
-	const auto freeTownId = g_configManager().getNumber(FREE_TOWN_ID);
-	const auto &defaultTown = g_game().map.towns.getTown(freeTownId);
+	const auto freeTownName = g_configManager().getString(FREE_TOWN_NAME);
+	auto defaultTown = g_game().map.towns.getTown(freeTownName);
 	if (!defaultTown) {
 		return;
 	}

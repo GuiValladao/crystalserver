@@ -400,7 +400,6 @@ bool ConfigManager::load() {
 	loadIntConfig(L, ROOK_SLOT_AMMO, "rookSlotAmmo", 0);
 	loadIntConfig(L, DAYS_TO_CLOSE_BID, "daysToCloseBid", 7);
 	loadIntConfig(L, ANIMUS_MASTERY_MONSTERS_TO_INCREASE_XP_MULTIPLIER, "animusMasteryMonstersToIncreaseXpMultiplier", 10);
-	loadIntConfig(L, FREE_TOWN_ID, "freeTownId", 8);
 	loadIntConfig(L, UI_ACTIONS_DELAY_INTERVAL, "uiActionsDelay", 1000);
 	loadIntConfig(L, MARKET_ACTIONS_DELAY_INTERVAL, "marketActionsDelay", 1000);
 	loadIntConfig(L, IMBUEMENT_ACTIONS_DELAY_INTERVAL, "imbueActionsDelay", 1000);
@@ -433,6 +432,7 @@ bool ConfigManager::load() {
 	loadStringConfig(L, URL, "url", "");
 	loadStringConfig(L, WORLD_TYPE, "worldType", "pvp");
 	loadStringConfig(L, LOGLEVEL, "logLevel", "info");
+	loadStringConfig(L, FREE_TOWN_NAME, "freeTownName", "Thais");
 
 	loadLuaOTCFeatures(L);
 

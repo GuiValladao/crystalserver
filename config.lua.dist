@@ -521,7 +521,7 @@ logPlayersStatements = false
 -- Comma-separated list of towns treated as free for non-premium players
 -- NOTE: "Ab'Dendriel,Carlin,Kazordoon,Thais,Venore,Rookgaard,Dawnport,Dawnport Tutorial,Island of Destiny,Karmia"
 freePremium = false
-freeTownId = 8
+freeTownName = "Thais"
 freeTowns = "Ab'Dendriel,Carlin,Kazordoon,Thais,Venore,Rookgaard,Dawnport,Dawnport Tutorial,Island of Destiny,Karmia"
 
 -- Chain system
