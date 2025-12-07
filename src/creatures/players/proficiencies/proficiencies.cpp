@@ -25,102 +25,186 @@
 #include <utils/tools.hpp>
 #include "items/item.hpp"
 
-#include <nlohmann/json.hpp>
-
-using json = nlohmann::json;
-
 Proficiencies &Proficiencies::getInstance() {
 	return inject<Proficiencies>();
 }
 
-bool Proficiencies::loadFromJson(bool /* reloading */) {
-	const auto &jsonFile = g_configManager().getString(CORE_DIRECTORY) + "/items/proficiencies.json";
-	std::ifstream ifs(jsonFile);
-	if (!ifs.is_open()) {
-		g_logger().error("[Proficiencies] Failed to open {}", jsonFile);
-		return false;
-	}
+static WeaponProficiencyPerkType_t getPerkType(const std::string& str) {
+    static const std::unordered_map<std::string, WeaponProficiencyPerkType_t> map = {
+        {"attackDamage", PROFICIENCY_PERK_ATTACK_DAMAGE},
+        {"defense", PROFICIENCY_PERK_DEFENSE},
+        {"shieldMod", PROFICIENCY_PERK_WEAPON_SHIELD_MOD},
+        {"skillBonus", PROFICIENCY_PERK_SKILLID_BONUS},
+        {"specialMagicLevel", PROFICIENCY_PERK_SPECIAL_MAGIC_LEVEL},
+        {"augment", PROFICIENCY_PERK_AUGMENT_TYPE},
+        {"bestiaryDamage", PROFICIENCY_PERK_BESTIARY_DAMAGE},
+        {"damageBoss", PROFICIENCY_PERK_DAMAGE_GAIN_BOSS_AND_SINISTER_EMBRACED},
+        {"critChance", PROFICIENCY_PERK_CRITICAL_HIT_CHANCE},
+        {"critChanceSpell", PROFICIENCY_PERK_CRITICAL_HIT_CHANCE_FOR_ELEMENT_ID_SPELLS_AND_RUNES},
+        {"critChanceRune", PROFICIENCY_PERK_CRITICAL_HIT_CHANCE_FOR_OFFENSIVE_RUNES},
+        {"critChanceAuto", PROFICIENCY_PERK_CRITICAL_HIT_CHANCE_FOR_AUTOATTACK},
+        {"critExtraDamage", PROFICIENCY_PERK_CRITICAL_EXTRA_DAMAGE},
+        {"critExtraDamageSpell", PROFICIENCY_PERK_CRITICAL_EXTRA_DAMAGE_FOR_ELEMENT_ID_SPELLS_AND_RUNES},
+        {"critExtraDamageRune", PROFICIENCY_PERK_CRITICAL_EXTRA_DAMAGE_FOR_OFFENSIVE_RUNES},
+        {"critExtraDamageAuto", PROFICIENCY_PERK_CRITICAL_EXTRA_DAMAGE_FOR_AUTOATTACK},
+        {"manaLeech", PROFICIENCY_PERK_MANA_LEECH},
+        {"lifeLeech", PROFICIENCY_PERK_LIFE_LEECH},
+        {"manaOnHit", PROFICIENCY_PERK_MANA_GAIN_ONHIT},
+        {"lifeOnHit", PROFICIENCY_PERK_LIFE_GAIN_ONHIT},
+        {"manaOnKill", PROFICIENCY_PERK_MANA_GAIN_ONKILL},
+        {"lifeOnKill", PROFICIENCY_PERK_LIFE_GAIN_ONKILL},
+        {"damageAtRange", PROFICIENCY_PERK_GAIN_DAMAGE_AT_RANGE},
+        {"rangedHitChance", PROFICIENCY_PERK_RANGED_HIT_CHANCE},
+        {"attackRange", PROFICIENCY_PERK_ATTACK_RANGE},
+        {"skillDamageAuto", PROFICIENCY_PERK_SKILLID_PERCENTAGE_AS_EXTRA_DAMAGE_FOR_AUTOATTACK},
+        {"skillDamageSpell", PROFICIENCY_PERK_SKILLID_PERCENTAGE_AS_EXTRA_DAMAGE_FOR_SPELLS},
+        {"skillHealingSpell", PROFICIENCY_PERK_SKILLID_PERCENTAGE_AS_EXTRA_HEALING_FOR_SPELLS}
+    };
+    auto it = map.find(str);
+    return it != map.end() ? it->second : PROFICIENCY_PERK_ATTACK_DAMAGE;
+}
 
-	json proficiencyJson;
-	ifs >> proficiencyJson;
+static int8_t getSkillId(const std::string& str) {
+    static const std::unordered_map<std::string, int8_t> map = {
+        {"magic", PROFICIENCY_SKILL_MAGIC},
+        {"shield", PROFICIENCY_SKILL_SHIELD},
+        {"distance", PROFICIENCY_SKILL_DISTANCE},
+        {"sword", PROFICIENCY_SKILL_SWORD},
+        {"club", PROFICIENCY_SKILL_CLUB},
+        {"axe", PROFICIENCY_SKILL_AXE},
+        {"fist", PROFICIENCY_SKILL_FIST},
+        {"fishing", PROFICIENCY_SKILL_FISHING}
+    };
+    auto it = map.find(str);
+    return it != map.end() ? it->second : 0;
+}
 
-	loaded = true;
-	proficienciesMap.clear();
+static int32_t getDamageType(const std::string& str) {
+    static const std::unordered_map<std::string, int32_t> map = {
+        {"fire", PROFICIENCY_DAMAGETYPE_FIRE},
+        {"earth", PROFICIENCY_DAMAGETYPE_EARTH},
+        {"energy", PROFICIENCY_DAMAGETYPE_ENERGY},
+        {"ice", PROFICIENCY_DAMAGETYPE_ICE},
+        {"holy", PROFICIENCY_DAMAGETYPE_HOLY},
+        {"death", PROFICIENCY_DAMAGETYPE_DEATH},
+        {"healing", PROFICIENCY_DAMAGETYPE_HEALING}
+    };
+    auto it = map.find(str);
+    return it != map.end() ? it->second : 0;
+}
 
-	for (const auto &entry : proficiencyJson) {
-		const uint32_t proficiencyId = entry.at("ProficiencyId").get<uint32_t>();
-		const uint8_t maxLevel = entry.at("Levels").size();
-		WeaponProficiencyStruct proficiencyStruct(proficiencyId, maxLevel);
+static uint8_t getAugmentType(const std::string& str) {
+    static const std::unordered_map<std::string, uint8_t> map = {
+        {"baseDamage", PROFICIENCY_AUGMENTTYPE_BASE_DAMAGE},
+		{"healing", PROFICIENCY_AUGMENTTYPE_HEALING},
+        {"cooldown", PROFICIENCY_AUGMENTTYPE_COOLDOWN},
+        {"increasedDamage", PROFICIENCY_AUGMENTTYPE_INCREASED_DAMAGE},
+        {"lifeLeech", PROFICIENCY_AUGMENTTYPE_LIFE_LEECH},
+        {"manaLeech", PROFICIENCY_AUGMENTTYPE_MANA_LEECH},
+        {"critExtraDamage", PROFICIENCY_AUGMENTTYPE_CRITICAL_EXTRA_DAMAGE},
+        {"critChance", PROFICIENCY_AUGMENTTYPE_CRITICAL_HIT_CHANCE}
+        // Adicione outros augments conforme necessário baseado no proficiencies_definitions.hpp
+    };
+    auto it = map.find(str);
+    return it != map.end() ? it->second : 0;
+}
 
-		const auto &levels = entry.at("Levels");
-		uint8_t levelIndex = 1;
-		for (const auto &levelObj : levels) {
-			const uint8_t maxPerks = levelObj.at("Perks").size();
-			ProficiencyLevelStruct levelStruct(levelIndex, maxPerks);
+// --- XML ---
 
-			const auto &perksArray = levelObj.at("Perks");
-			for (size_t perkIdx = 0; perkIdx < perksArray.size(); ++perkIdx) {
-				const auto &perkJson = perksArray[perkIdx];
-				const uint8_t positionSlot = static_cast<uint8_t>(perkIdx + 1);
-				const WeaponProficiencyPerkType_t perkType = static_cast<WeaponProficiencyPerkType_t>(perkJson.at("Type").get<uint16_t>());
-				const float perkValue = perkJson.at("Value").get<float>();
+bool Proficiencies::loadFromXml(bool /* reloading */) {
+    const auto &fileName = g_configManager().getString(CORE_DIRECTORY) + "/items/proficiencies.xml";
+    pugi::xml_document doc;
+    pugi::xml_parse_result result = doc.load_file(fileName.c_str());
 
-				ProficiencyPerk perk(positionSlot, perkType, perkValue);
+    if (!result) {
+        g_logger().error("[Proficiencies] Failed to parse {}: {}", fileName, result.description());
+        return false;
+    }
 
-				if (perkJson.contains("SkillId")) {
-					perk.skillId = perkJson.at("SkillId").get<int8_t>();
-				}
+    loaded = true;
+    proficienciesMap.clear();
 
-				if (perkJson.contains("ElementId")) {
-					perk.damageType = perkJson.at("ElementId").get<int32_t>();
-				}
+    for (auto proficiencyNode : doc.child("proficiencies").children("proficiency")) {
+        uint32_t proficiencyId = proficiencyNode.attribute("id").as_uint();
+        // O nome é só para organização visual no XML, não é usado na struct base, 
+        // mas ajuda muito a saber o que você está editando.
+        
+        // Contar quantos levels existem para inicializar a struct
+        uint8_t maxLevel = 0;
+        for (auto lvl : proficiencyNode.children("level")) { maxLevel++; }
 
-				if (perkJson.contains("Range")) {
-					perk.range = perkJson.at("Range").get<uint8_t>();
-				}
+        WeaponProficiencyStruct proficiencyStruct(proficiencyId, maxLevel);
 
-				if (perkJson.contains("AugmentType")) {
-					perk.augmentType = perkJson.at("AugmentType").get<uint8_t>();
-				}
+        for (auto levelNode : proficiencyNode.children("level")) {
+            uint8_t levelId = levelNode.attribute("id").as_uint();
+            
+            // Contar perks
+            uint8_t maxPerks = 0;
+            for (auto perk : levelNode.children("perk")) { maxPerks++; }
 
-				if (perkJson.contains("SpellId")) {
-					perk.spellId = perkJson.at("SpellId").get<uint16_t>();
-				}
+            ProficiencyLevelStruct levelStruct(levelId, maxPerks);
 
-				if (perkJson.contains("BestiaryId")) {
-					perk.bestiaryId = perkJson.at("BestiaryId").get<uint8_t>();
-				}
+            uint8_t slotIndex = 1;
+            for (auto perkNode : levelNode.children("perk")) {
+                std::string typeStr = perkNode.attribute("type").as_string();
+                WeaponProficiencyPerkType_t perkType = getPerkType(typeStr);
+                float value = perkNode.attribute("value").as_float();
 
-				// if (perkJson.contains("BestiaryName")) {
-				// perk.bestiaryName = perkJson.at("BestiaryName").get<std::string>();
-				//}
+                ProficiencyPerk perk(slotIndex, perkType, value);
 
-				if (perkJson.contains("DamageType")) {
-					perk.damageType = perkJson.at("DamageType").get<int32_t>();
-				}
+                // Atributos Opcionais (String baseados)
+                if (perkNode.attribute("skill")) {
+                    perk.skillId = getSkillId(perkNode.attribute("skill").as_string());
+                }
 
-				levelStruct.proficiencyDataPerks.emplace_back(std::move(perk));
-			}
+                if (perkNode.attribute("damageType")) {
+                    perk.damageType = getDamageType(perkNode.attribute("damageType").as_string());
+                }
+                
+                // ElementId e DamageType geralmente usam o mesmo enum no seu sistema
+                if (perkNode.attribute("element")) {
+                    perk.damageType = getDamageType(perkNode.attribute("element").as_string());
+                }
 
-			proficiencyStruct.proficiencyDataLevel.emplace_back(std::move(levelStruct));
-			++levelIndex;
-		}
+                if (perkNode.attribute("augment")) {
+                    perk.augmentType = getAugmentType(perkNode.attribute("augment").as_string());
+                }
 
-		if (proficienciesMap.count(proficiencyId)) {
-			g_logger().warn("[Proficiencies] proficiencyId {} duplicate in the json!", proficiencyId);
-		}
+                // Atributos Numéricos diretos
+                if (perkNode.attribute("range")) {
+                    perk.range = perkNode.attribute("range").as_uint();
+                }
 
-		proficienciesMap[proficiencyId] = std::move(proficiencyStruct);
-	}
+                if (perkNode.attribute("spellId")) {
+                    perk.spellId = perkNode.attribute("spellId").as_uint();
+                }
 
-	return true;
+                if (perkNode.attribute("bestiaryId")) {
+                    perk.bestiaryId = perkNode.attribute("bestiaryId").as_uint();
+                }
+
+                levelStruct.proficiencyDataPerks.emplace_back(std::move(perk));
+                slotIndex++;
+            }
+            proficiencyStruct.proficiencyDataLevel.emplace_back(std::move(levelStruct));
+        }
+
+        if (proficienciesMap.count(proficiencyId)) {
+            g_logger().warn("[Proficiencies] Duplicate proficiencyId {} in XML!", proficiencyId);
+        }
+
+        proficienciesMap[proficiencyId] = std::move(proficiencyStruct);
+    }
+
+    return true;
 }
 
 bool Proficiencies::reload() {
-	proficienciesMap.clear();
-	loaded = false;
-	return loadFromJson(true);
+    proficienciesMap.clear();
+    loaded = false;
+    return loadFromXml(true);
 }
+
 
 const WeaponProficiencyStruct* Proficiencies::getProficiencyByItemId(uint16_t itemId) const {
 	const ItemType &itemType = Item::items[itemId];

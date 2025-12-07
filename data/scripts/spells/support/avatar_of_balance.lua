@@ -39,6 +39,6 @@ spell:mana(1200)
 spell:isPremium(false)
 spell:needLearn(false)
 spell:groupCooldown(2000)
-spell:cooldown(7200000)
+spell:cooldown(2 * 60 * 60 * 1000) -- Default cooldown = 2 hours
 spell:vocation("monk;true", "exalted monk;true")
 spell:register()

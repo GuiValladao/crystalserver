@@ -71,7 +71,8 @@ public:
 
 	static Proficiencies &getInstance();
 
-	bool loadFromJson(bool reloading = false);
+	bool loadFromXml(bool reloading = false);
+	
 	bool reload();
 	const WeaponProficiencyStruct* getProficiencyByItemId(uint16_t itemId) const;
 	uint8_t getMaxProficiencyLevelForItem(uint16_t itemId) const;

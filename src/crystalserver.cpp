@@ -347,7 +347,7 @@ void CrystalServer::loadModules() {
 	modulesLoadHelper(Outfits::getInstance().loadFromXml(), "XML/outfits.xml");
 	modulesLoadHelper(Familiars::getInstance().loadFromXml(), "XML/familiars.xml");
 	modulesLoadHelper(g_imbuements().loadFromXml(), "XML/imbuements.xml");
-	modulesLoadHelper(g_proficiencies().loadFromJson(), "items/proficiencies.json");
+	modulesLoadHelper(g_proficiencies().loadFromXml(), "items/proficiencies.xml");
 	modulesLoadHelper(g_storages().loadFromXML(), "XML/storages.xml");
 
 	modulesLoadHelper(Item::items.loadFromXml(), "items.xml");

@@ -777,8 +777,8 @@ int32_t Spell::calculateAugmentSpellCooldownReduction(const std::shared_ptr<Play
 	for (const auto &playerProficiencyAugment : player->getEquippedWeaponProficiency().spellAugments) {
 		if (playerProficiencyAugment.spellId == getSpellId()) {
 			if (playerProficiencyAugment.augmentType == PROFICIENCY_AUGMENTTYPE_COOLDOWN) {
-				const int32_t augmentValue = playerProficiencyAugment.value * 1;
-				spellCooldown += augmentValue;
+				int32_t reductionValue = static_cast<int32_t>(playerProficiencyAugment.value * 1000.0f);
+				spellCooldown += reductionValue;
 			}
 		}
 	}
@@ -795,12 +795,13 @@ void Spell::applyCooldownConditions(const std::shared_ptr<Player> &player) const
 		rateCooldown = 0.1; // Safe minimum value
 	}
 
+	int32_t augmentCooldownReduction = calculateAugmentSpellCooldownReduction(player);
+
 	if (cooldown > 0) {
 		int32_t spellCooldown = cooldown;
 		if (isUpgraded) {
 			spellCooldown -= getWheelOfDestinyBoost(WheelSpellBoost_t::COOLDOWN, spellGrade);
 		}
-		int32_t augmentCooldownReduction = calculateAugmentSpellCooldownReduction(player);
 		g_logger().debug("[{}] spell name: {}, spellCooldown: {}, bonus: {}, augment {}", __FUNCTION__, name, spellCooldown, player->wheel()->getSpellBonus(name, WheelSpellBoost_t::COOLDOWN), augmentCooldownReduction);
 		spellCooldown -= player->wheel()->getSpellBonus(name, WheelSpellBoost_t::COOLDOWN);
 		spellCooldown -= augmentCooldownReduction;
@@ -829,7 +830,8 @@ void Spell::applyCooldownConditions(const std::shared_ptr<Player> &player) const
 		if (isUpgraded) {
 			spellSecondaryGroupCooldown -= getWheelOfDestinyBoost(WheelSpellBoost_t::SECONDARY_GROUP_COOLDOWN, spellGrade);
 		}
-		spellSecondaryGroupCooldown -= player->wheel()->getSpellBonus(name, WheelSpellBoost_t::SECONDARY_GROUP_COOLDOWN);
+		spellSecondaryGroupCooldown -= player->wheel()->getSpellBonus(name, WheelSpellBoost_t::SECONDARY_GROUP_COOLDOWN);	
+		spellSecondaryGroupCooldown -= augmentCooldownReduction;
 		if (spellSecondaryGroupCooldown > 0) {
 			player->wheel()->handleBeamMasteryCooldown(player, name, spellSecondaryGroupCooldown, rateCooldown);
 			const auto &condition = Condition::createCondition(CONDITIONID_DEFAULT, CONDITION_SPELLGROUPCOOLDOWN, spellSecondaryGroupCooldown / rateCooldown, 0, false, secondaryGroup);
