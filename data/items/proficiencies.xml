@@ -31,7 +31,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="8" name="Sanguine 1H Axe">
+    <proficiency id="8" name="Sanguine Hatchet">
         <level id="1">
             <perk type="skillBonus" value="1" skill="axe"/>
         </level>
@@ -62,7 +62,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="9" name="Sanguine 1H Club">
+    <proficiency id="9" name="Sanguine Cudgel">
         <level id="1">
             <perk type="skillBonus" value="1" skill="club"/>
         </level>
@@ -93,7 +93,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="10" name="Sanguine 2H Sword">
+    <proficiency id="10" name="Sanguine Razor">
         <level id="1">
             <perk type="skillBonus" value="1" skill="sword"/>
         </level>
@@ -124,7 +124,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="11" name="Sanguine 2H Axe">
+    <proficiency id="11" name="Sanguine Battleaxe">
         <level id="1">
             <perk type="skillBonus" value="1" skill="axe"/>
         </level>
@@ -155,7 +155,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="12" name="Sanguine 2H Club">
+    <proficiency id="12" name="Sanguine Bludgeon">
         <level id="1">
             <perk type="skillBonus" value="1" skill="club"/>
         </level>
@@ -186,7 +186,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="13" name="Sanguine 2H Bow">
+    <proficiency id="13" name="Sanguine Bow">
         <level id="1">
             <perk type="skillBonus" value="1" skill="distance"/>
         </level>
@@ -217,7 +217,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="14" name="Sanguine 2H Fist">
+    <proficiency id="14" name="Sanguine Claws">
         <level id="1">
             <perk type="skillBonus" value="1" skill="fist"/>
         </level>
@@ -248,7 +248,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="15" name="Sanguine 1H Wand">
+    <proficiency id="15" name="Sanguine Coil">
         <level id="1">
             <perk type="skillBonus" value="1" skill="magic"/>
         </level>
@@ -279,7 +279,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="16" name="Sanguine 1H Rod">
+    <proficiency id="16" name="Sanguine Rod">
         <level id="1">
             <perk type="skillBonus" value="1" skill="magic"/>
         </level>
@@ -311,7 +311,7 @@
             <perk type="critChance" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="17" name="Grand Sanguine 1H Axe">
+    <proficiency id="17" name="Grand Sanguine Hatchet">
         <level id="1">
             <perk type="skillBonus" value="1" skill="axe"/>
         </level>
@@ -342,7 +342,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="18" name="Grand Sanguine 1H Club">
+    <proficiency id="18" name="Grand Sanguine Cudgel">
         <level id="1">
             <perk type="skillBonus" value="1" skill="club"/>
         </level>
@@ -373,7 +373,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="19" name="Grand Sanguine 1H Sword">
+    <proficiency id="19" name="Grand Sanguine Blade">
         <level id="1">
             <perk type="skillBonus" value="1" skill="sword"/>
         </level>
@@ -404,7 +404,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="20" name="Grand Sanguine 2H Sword">
+    <proficiency id="20" name="Grand Sanguine Razor">
         <level id="1">
             <perk type="skillBonus" value="1" skill="sword"/>
         </level>
@@ -435,7 +435,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="21" name="Grand Sanguine 2H Club">
+    <proficiency id="21" name="Grand Sanguine Bludgeon">
         <level id="1">
             <perk type="skillBonus" value="1" skill="club"/>
         </level>
@@ -466,7 +466,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="22" name="Grand Sanguine 2H Axe">
+    <proficiency id="22" name="Grand Sanguine Battleaxe">
         <level id="1">
             <perk type="skillBonus" value="1" skill="axe"/>
         </level>
@@ -497,7 +497,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="23" name="Grand Sanguine 2H Bow">
+    <proficiency id="23" name="Grand Sanguine Bow">
         <level id="1">
             <perk type="skillBonus" value="1" skill="distance"/>
         </level>
@@ -528,7 +528,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="24" name="Grand Sanguine 2H Fist">
+    <proficiency id="24" name="Grand Sanguine Claws">
         <level id="1">
             <perk type="skillBonus" value="1" skill="fist"/>
         </level>
@@ -559,7 +559,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="25" name="Grand Sanguine 1H Rod">
+    <proficiency id="25" name="Grand Sanguine Rod">
         <level id="1">
             <perk type="skillBonus" value="1" skill="magic"/>
         </level>
@@ -591,7 +591,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="26" name="Grand Sanguine 1H Wand">
+    <proficiency id="26" name="Grand Sanguine Coil">
         <level id="1">
             <perk type="skillBonus" value="1" skill="magic"/>
         </level>
@@ -622,7 +622,7 @@
             <perk type="critChance" value="0.03"/>
         </level>
     </proficiency>
-    <proficiency id="27" name="Soul 1H Axe">
+    <proficiency id="27" name="Soulbiter">
         <level id="1">
             <perk type="skillBonus" value="1" skill="axe"/>
         </level>
@@ -654,7 +654,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="28" name="Soul 1H Club">
+    <proficiency id="28" name="Soulcrusher">
         <level id="1">
             <perk type="skillBonus" value="1" skill="club"/>
         </level>
@@ -686,7 +686,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="29" name="Soul 1H Sword">
+    <proficiency id="29" name="Soulcutter">
         <level id="1">
             <perk type="skillBonus" value="1" skill="sword"/>
         </level>
@@ -718,7 +718,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="30" name="Soul 2H Sword">
+    <proficiency id="30" name="Soulshredder">
         <level id="1">
             <perk type="skillBonus" value="1" skill="sword"/>
         </level>
@@ -750,7 +750,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="31" name="Soul 2H Club">
+    <proficiency id="31" name="Soulmaimer">
         <level id="1">
             <perk type="skillBonus" value="1" skill="club"/>
         </level>
@@ -782,7 +782,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="32" name="Soul 2H Axe">
+    <proficiency id="32" name="Souleater">
         <level id="1">
             <perk type="skillBonus" value="1" skill="axe"/>
         </level>
@@ -814,7 +814,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="33" name="Soul 2H Fist">
+    <proficiency id="33" name="Soulkamas">
         <level id="1">
             <perk type="skillBonus" value="1" skill="fist"/>
         </level>
@@ -845,7 +845,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="34" name="Soul 2H Bow">
+    <proficiency id="34" name="Soulbleeder">
         <level id="1">
             <perk type="skillBonus" value="1" skill="distance"/>
         </level>
@@ -876,7 +876,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="35" name="Soul 1H Rod">
+    <proficiency id="35" name="Soulhexer">
         <level id="1">
             <perk type="lifeLeech" value="0.03"/>
         </level>
@@ -907,7 +907,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="36" name="Soul 1H Wand">
+    <proficiency id="36" name="Soultainter">
         <level id="1">
             <perk type="critExtraDamage" value="0.05"/>
         </level>
@@ -937,7 +937,7 @@
             <perk type="critChance" value="0.01"/>
         </level>
     </proficiency>
-    <proficiency id="37" name="Amber 1H Sword">
+    <proficiency id="37" name="Amber Sabre">
         <level id="1">
             <perk type="skillBonus" value="1" skill="sword"/>
         </level>
@@ -965,7 +965,7 @@
             <perk type="attackDamage" value="1"/>
         </level>
     </proficiency>
-    <proficiency id="38" name="Amber 1H Axe">
+    <proficiency id="38" name="Amber Axe">
         <level id="1">
             <perk type="skillBonus" value="1" skill="axe"/>
         </level>
@@ -993,7 +993,7 @@
             <perk type="attackDamage" value="1"/>
         </level>
     </proficiency>
-    <proficiency id="39" name="Amber 1H Club">
+    <proficiency id="39" name="Amber Cudgel">
         <level id="1">
             <perk type="skillBonus" value="1" skill="club"/>
         </level>
@@ -1021,7 +1021,7 @@
             <perk type="attackDamage" value="1"/>
         </level>
     </proficiency>
-    <proficiency id="40" name="Amber 2H Club">
+    <proficiency id="40" name="Amber Bludgeon">
         <level id="1">
             <perk type="skillBonus" value="1" skill="club"/>
         </level>
@@ -1049,7 +1049,7 @@
             <perk type="attackDamage" value="1"/>
         </level>
     </proficiency>
-    <proficiency id="41" name="Amber 2H Axe">
+    <proficiency id="41" name="Amber Greataxe">
         <level id="1">
             <perk type="skillBonus" value="1" skill="axe"/>
         </level>
@@ -1077,7 +1077,7 @@
             <perk type="attackDamage" value="1"/>
         </level>
     </proficiency>
-    <proficiency id="42" name="Amber 2H Sword">
+    <proficiency id="42" name="Amber Slayer">
         <level id="1">
             <perk type="skillBonus" value="1" skill="sword"/>
         </level>
@@ -1105,7 +1105,7 @@
             <perk type="attackDamage" value="1"/>
         </level>
     </proficiency>
-    <proficiency id="43" name="Amber 2H Fist">
+    <proficiency id="43" name="Amber Kusarigama">
         <level id="1">
             <perk type="skillDamageAuto" value="0.25" skill="magic"/>
         </level>
@@ -1133,7 +1133,7 @@
             <perk type="skillDamageSpell" value="0.25" skill="magic"/>
         </level>
     </proficiency>
-    <proficiency id="44" name="Amber 2H Bow">
+    <proficiency id="44" name="Amber Bow">
         <level id="1">
             <perk type="skillDamageAuto" value="0.125" skill="magic"/>
         </level>
@@ -1162,7 +1162,7 @@
             <perk type="specialMagicLevel" value="2" damageType="holy"/>
         </level>
     </proficiency>
-    <proficiency id="45" name="Amber 1H Rod">
+    <proficiency id="45" name="Amber Rod">
         <level id="1">
             <perk type="skillBonus" value="1" skill="magic"/>
         </level>
@@ -1189,7 +1189,7 @@
             <perk type="augment" value="0.1" augment="lifeLeech" spellId="43"/>
         </level>
     </proficiency>
-    <proficiency id="46" name="Amber 1H Wand">
+    <proficiency id="46" name="Amber Wand">
         <level id="1">
             <perk type="skillBonus" value="1" skill="magic"/>
         </level>
@@ -1216,7 +1216,7 @@
             <perk type="augment" value="0.5" augment="manaLeech" spellId="119"/>
         </level>
     </proficiency>
-    <proficiency id="47" name="Inferniarch 1H Club">
+    <proficiency id="47" name="Inferniarch Flail">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -1233,7 +1233,7 @@
             <perk type="augment" value="0.03" augment="manaLeech" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="48" name="Inferniarch 1H Axe">
+    <proficiency id="48" name="Inferniarch Battleaxe">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -1250,7 +1250,7 @@
             <perk type="augment" value="0.03" augment="manaLeech" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="49" name="Inferniarch 1H Sword">
+    <proficiency id="49" name="Inferniarch Blade">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -1267,7 +1267,7 @@
             <perk type="augment" value="0.03" augment="manaLeech" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="50" name="Inferniarch 2H Club">
+    <proficiency id="50" name="Inferniarch Warhammer">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -1284,7 +1284,7 @@
             <perk type="augment" value="0.03" augment="manaLeech" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="51" name="Inferniarch 2H Axe">
+    <proficiency id="51" name="Inferniarch Greataxe">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -1301,7 +1301,7 @@
             <perk type="augment" value="0.03" augment="manaLeech" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="52" name="Inferniarch 2H Sword">
+    <proficiency id="52" name="Inferniarch Slayer">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -1318,7 +1318,7 @@
             <perk type="augment" value="0.03" augment="manaLeech" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="53" name="Inferniarch 2H Fist">
+    <proficiency id="53" name="Inferniarch Claws">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -1335,7 +1335,7 @@
             <perk type="augment" value="0.03" augment="manaLeech" spellId="289"/>
         </level>
     </proficiency>
-    <proficiency id="54" name="Inferniarch 2H Distance">
+    <proficiency id="54" name="Inferniarch Arbalest">
         <level id="1">
             <perk type="attackDamage" value="1"/>
         </level>
@@ -1352,7 +1352,7 @@
             <perk type="augment" value="0.03" augment="manaLeech" spellId="57"/>
         </level>
     </proficiency>
-    <proficiency id="55" name="Inferniarch 1H Wand">
+    <proficiency id="55" name="Inferniarch Wand">
         <level id="1">
             <perk type="skillDamageAuto" value="0.5" skill="fishing"/>
         </level>
@@ -1373,7 +1373,7 @@
             <perk type="specialMagicLevel" value="1" damageType="fire"/>
         </level>
     </proficiency>
-    <proficiency id="56" name="Inferniarch 1H Rod">
+    <proficiency id="56" name="Inferniarch Rod">
         <level id="1">
             <perk type="skillDamageAuto" value="0.5" skill="fishing"/>
         </level>
@@ -1394,7 +1394,7 @@
             <perk type="specialMagicLevel" value="1" damageType="earth"/>
         </level>
     </proficiency>
-    <proficiency id="57" name="Rending Inferniarch 2H Club">
+    <proficiency id="57" name="Rending Inferniarch Warhammer">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1422,7 +1422,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="58" name="Rending Inferniarch 2H Axe">
+    <proficiency id="58" name="Rending Inferniarch Greataxe">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1450,7 +1450,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="59" name="Rending Inferniarch 2H Sword">
+    <proficiency id="59" name="Rending Inferniarch Slayer">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1478,7 +1478,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="60" name="Rending Inferniarch 1H Club">
+    <proficiency id="60" name="Rending Inferniarch Flail">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1506,7 +1506,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="61" name="Rending Inferniarch 1H Axe">
+    <proficiency id="61" name="Rending Inferniarch Battleaxe">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1534,7 +1534,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="62" name="Rending Inferniarch 1H Sword">
+    <proficiency id="62" name="Rending Inferniarch Blade">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1562,7 +1562,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="63" name="Rending Inferniarch 2H Fist">
+    <proficiency id="63" name="Rending Inferniarch Claws">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1590,7 +1590,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="289"/>
         </level>
     </proficiency>
-    <proficiency id="64" name="Rending Inferniarch 2H Bow">
+    <proficiency id="64" name="Rending Inferniarch Bow">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1621,7 +1621,7 @@
             <perk type="critChanceRune" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="65" name="Rending Inferniarch 1H Wand">
+    <proficiency id="65" name="Rending Inferniarch Wand">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1650,7 +1650,7 @@
             <perk type="critChanceSpell" value="0.01" element="fire"/>
         </level>
     </proficiency>
-    <proficiency id="66" name="Rending Inferniarch 1H Rod">
+    <proficiency id="66" name="Rending Inferniarch Rod">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -1679,7 +1679,7 @@
             <perk type="critChanceSpell" value="0.01" element="earth"/>
         </level>
     </proficiency>
-    <proficiency id="67" name="Draining Inferniarch 2H Club">
+    <proficiency id="67" name="Draining Inferniarch Warhammer">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1707,7 +1707,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="68" name="Draining Inferniarch 2H Axe">
+    <proficiency id="68" name="Draining Inferniarch Greataxe">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1735,7 +1735,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="69" name="Draining Inferniarch 2H Sword">
+    <proficiency id="69" name="Draining Inferniarch Slayer">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1763,7 +1763,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="70" name="Draining Inferniarch 1H Club">
+    <proficiency id="70" name="Draining Inferniarch Flail">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1791,7 +1791,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="71" name="Draining Inferniarch 1H Axe">
+    <proficiency id="71" name="Draining Inferniarch Battleaxe">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1819,7 +1819,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="72" name="Draining Inferniarch 1H Sword">
+    <proficiency id="72" name="Draining Inferniarch Blade">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1847,7 +1847,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="73" name="Draining Inferniarch 2H Fist">
+    <proficiency id="73" name="Draining Inferniarch Claws">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1875,7 +1875,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="289"/>
         </level>
     </proficiency>
-    <proficiency id="74" name="Draining Inferniarch 2H Bow">
+    <proficiency id="74" name="Draining Inferniarch Bow">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1906,7 +1906,7 @@
             <perk type="critChanceRune" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="75" name="Draining Inferniarch 1H Rod">
+    <proficiency id="75" name="Draining Inferniarch Rod">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1935,7 +1935,7 @@
             <perk type="critChanceSpell" value="0.01" element="earth"/>
         </level>
     </proficiency>
-    <proficiency id="76" name="Draining Inferniarch 1H Wand">
+    <proficiency id="76" name="Draining Inferniarch Wand">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
@@ -1964,7 +1964,7 @@
             <perk type="critChanceSpell" value="0.01" element="fire"/>
         </level>
     </proficiency>
-    <proficiency id="77" name="Siphoning Inferniarch 2H Club">
+    <proficiency id="77" name="Siphoning Inferniarch Warhammer">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -1992,7 +1992,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="78" name="Siphoning Inferniarch 2H Axe">
+    <proficiency id="78" name="Siphoning Inferniarch Greataxe">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -2020,7 +2020,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="79" name="Siphoning Inferniarch 2H Sword">
+    <proficiency id="79" name="Siphoning Inferniarch Slayer">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -2048,7 +2048,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="80" name="Siphoning Inferniarch 1H Club">
+    <proficiency id="80" name="Siphoning Inferniarch Flail">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -2076,7 +2076,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="81" name="Siphoning Inferniarch 1H Axe">
+    <proficiency id="81" name="Siphoning Inferniarch Battleaxe">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -2104,7 +2104,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="82" name="Siphoning Inferniarch 1H Sword">
+    <proficiency id="82" name="Siphoning Inferniarch Blade">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -2132,7 +2132,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="80"/>
         </level>
     </proficiency>
-    <proficiency id="83" name="Siphoning Inferniarch 2H Fist">
+    <proficiency id="83" name="Siphoning Inferniarch Claws">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -2160,7 +2160,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="289"/>
         </level>
     </proficiency>
-    <proficiency id="84" name="Siphoning Inferniarch 1H Wand">
+    <proficiency id="84" name="Siphoning Inferniarch Wand">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -2189,7 +2189,7 @@
             <perk type="critChanceSpell" value="0.01" element="fire"/>
         </level>
     </proficiency>
-    <proficiency id="85" name="Siphoning Inferniarch 1H Rod">
+    <proficiency id="85" name="Siphoning Inferniarch Rod">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -2218,7 +2218,7 @@
             <perk type="critChanceSpell" value="0.01" element="earth"/>
         </level>
     </proficiency>
-    <proficiency id="86" name="Siphoning Inferniarch 2H Bow">
+    <proficiency id="86" name="Siphoning Inferniarch Bow">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -2249,7 +2249,7 @@
             <perk type="critChanceRune" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="87" name="Eldritch 2H Club">
+    <proficiency id="87" name="Eldritch Warmace">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.2"/>
         </level>
@@ -2269,7 +2269,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="106"/>
         </level>
     </proficiency>
-    <proficiency id="88" name="Eldritch 2H Axe">
+    <proficiency id="88" name="Eldritch Greataxe">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.2"/>
         </level>
@@ -2289,7 +2289,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="106"/>
         </level>
     </proficiency>
-    <proficiency id="89" name="Eldritch 2H Sword">
+    <proficiency id="89" name="Eldritch Claymore">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.2"/>
         </level>
@@ -2309,7 +2309,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="106"/>
         </level>
     </proficiency>
-    <proficiency id="90" name="Eldritch 2H Fist">
+    <proficiency id="90" name="Eldritch Crescent Moon Spade">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.2"/>
         </level>
@@ -2327,7 +2327,7 @@
             <perk type="skillBonus" value="1" skill="fist"/>
         </level>
     </proficiency>
-    <proficiency id="91" name="Eldritch 2H Distance">
+    <proficiency id="91" name="Eldritch Bow">
         <level id="1">
             <perk type="skillDamageAuto" value="0.1" skill="magic"/>
         </level>
@@ -2349,7 +2349,7 @@
             <perk type="damageAtRange" value="16" range="4"/>
         </level>
     </proficiency>
-    <proficiency id="92" name="Eldritch 1H Rod">
+    <proficiency id="92" name="Eldritch Rod">
         <level id="1">
             <perk type="manaOnKill" value="25"/>
         </level>
@@ -2370,7 +2370,7 @@
             <perk type="critChanceRune" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="93" name="Eldritch 1H Wand">
+    <proficiency id="93" name="Eldritch Wand">
         <level id="1">
             <perk type="manaOnKill" value="25"/>
         </level>
@@ -2391,7 +2391,7 @@
             <perk type="critChanceRune" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="94" name="Gilded Eldritch 2H Club">
+    <proficiency id="94" name="Gilded Eldritch Warmace">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.3"/>
         </level>
@@ -2411,7 +2411,7 @@
             <perk type="augment" value="0.02" augment="critChance" spellId="106"/>
         </level>
     </proficiency>
-    <proficiency id="95" name="Gilded Eldritch 2H Axe">
+    <proficiency id="95" name="Gilded Eldritch Greataxe">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.3"/>
         </level>
@@ -2431,7 +2431,7 @@
             <perk type="augment" value="0.02" augment="critChance" spellId="106"/>
         </level>
     </proficiency>
-    <proficiency id="96" name="Gilded Eldritch 2H Sword">
+    <proficiency id="96" name="Gilded Eldritch Claymore">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.3"/>
         </level>
@@ -2451,7 +2451,7 @@
             <perk type="augment" value="0.02" augment="critChance" spellId="106"/>
         </level>
     </proficiency>
-    <proficiency id="97" name="Gilded Eldritch 2H Fist">
+    <proficiency id="97" name="Gilded Crescent Moon Spade">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.3"/>
         </level>
@@ -2469,7 +2469,7 @@
             <perk type="skillBonus" value="2" skill="fist"/>
         </level>
     </proficiency>
-    <proficiency id="98" name="Gilded Eldritch 2H Distance">
+    <proficiency id="98" name="Gilded Eldritch Bow">
         <level id="1">
             <perk type="skillDamageAuto" value="0.15" skill="magic"/>
         </level>
@@ -2491,7 +2491,7 @@
             <perk type="damageAtRange" value="16" range="4"/>
         </level>
     </proficiency>
-    <proficiency id="99" name="Gilded Eldritch 1H Wand">
+    <proficiency id="99" name="Gilded Eldritch Wand">
         <level id="1">
             <perk type="manaOnKill" value="25"/>
         </level>
@@ -2512,7 +2512,7 @@
             <perk type="critChanceRune" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="100" name="Gilded Eldritch 1H Rod">
+    <proficiency id="100" name="Gilded Eldritch Rod">
         <level id="1">
             <perk type="manaOnKill" value="25"/>
         </level>
@@ -2533,7 +2533,7 @@
             <perk type="critChanceRune" value="0.02"/>
         </level>
     </proficiency>
-    <proficiency id="101" name="Crude Umbral 1H Club">
+    <proficiency id="101" name="Crude Umbral Mace">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -2546,7 +2546,7 @@
             <perk type="critChanceAuto" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="102" name="Crude Umbral 1H Axe">
+    <proficiency id="102" name="Crude Umbral Axe">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -2559,7 +2559,7 @@
             <perk type="critChanceAuto" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="103" name="Crude Umbral 1H Sword">
+    <proficiency id="103" name="Crude Umbral Blade">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -2572,7 +2572,7 @@
             <perk type="critChanceAuto" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="104" name="Crude Umbral 2H Club">
+    <proficiency id="104" name="Crude Umbral Hammer">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2585,7 +2585,7 @@
             <perk type="critChanceAuto" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="105" name="Crude Umbral 2H Axe">
+    <proficiency id="105" name="Crude Umbral Chopper">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2598,7 +2598,7 @@
             <perk type="critChanceAuto" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="106" name="Crude Umbral 2H Sword">
+    <proficiency id="106" name="Crude Umbral Slayer">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2611,7 +2611,7 @@
             <perk type="critChanceAuto" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="107" name="Crude Umbral 2H Fist">
+    <proficiency id="107" name="Crude Umbral Katar">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2624,7 +2624,7 @@
             <perk type="critChanceAuto" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="108" name="Crude Umbral 2H Bow">
+    <proficiency id="108" name="Crude Umbral Bow">
         <level id="1">
             <perk type="damageAtRange" value="5" range="3"/>
         </level>
@@ -2637,7 +2637,7 @@
             <perk type="critChanceAuto" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="109" name="Umbral 1H Club">
+    <proficiency id="109" name="Umbral Mace">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -2654,7 +2654,7 @@
             <perk type="manaOnKill" value="15"/>
         </level>
     </proficiency>
-    <proficiency id="110" name="Umbral 1H Axe">
+    <proficiency id="110" name="Umbral Axe">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -2671,7 +2671,7 @@
             <perk type="manaOnKill" value="15"/>
         </level>
     </proficiency>
-    <proficiency id="111" name="Umbral 1H Sword">
+    <proficiency id="111" name="Umbral Blade">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -2688,7 +2688,7 @@
             <perk type="manaOnKill" value="15"/>
         </level>
     </proficiency>
-    <proficiency id="112" name="Umbral 2H Club">
+    <proficiency id="112" name="Umbral Hammer">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2705,7 +2705,7 @@
             <perk type="manaOnKill" value="15"/>
         </level>
     </proficiency>
-    <proficiency id="113" name="Umbral 2H Axe">
+    <proficiency id="113" name="Umbral Chopper">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2722,7 +2722,7 @@
             <perk type="manaOnKill" value="15"/>
         </level>
     </proficiency>
-    <proficiency id="114" name="Umbral 2H Sword">
+    <proficiency id="114" name="Umbral Slayer">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2739,7 +2739,7 @@
             <perk type="manaOnKill" value="15"/>
         </level>
     </proficiency>
-    <proficiency id="115" name="Umbral 2H Fist">
+    <proficiency id="115" name="Umbral Katar">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2756,7 +2756,7 @@
             <perk type="manaOnKill" value="15"/>
         </level>
     </proficiency>
-    <proficiency id="117" name="Master Umbral 1H Club">
+    <proficiency id="117" name="Umbral Master Mace">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -2776,7 +2776,7 @@
             <perk type="skillDamageSpell" value="0.15" skill="club"/>
         </level>
     </proficiency>
-    <proficiency id="118" name="Master Umbral 1H Axe">
+    <proficiency id="118" name="Umbral Master Axe">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -2796,7 +2796,7 @@
             <perk type="skillDamageSpell" value="0.15" skill="axe"/>
         </level>
     </proficiency>
-    <proficiency id="119" name="Master Umbral 1H Sword">
+    <proficiency id="119" name="Umbral Masterblade">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -2816,7 +2816,7 @@
             <perk type="skillDamageSpell" value="0.15" skill="sword"/>
         </level>
     </proficiency>
-    <proficiency id="120" name="Master Umbral 2H Club">
+    <proficiency id="120" name="Umbral Master Hammer">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2836,7 +2836,7 @@
             <perk type="skillDamageSpell" value="0.15" skill="club"/>
         </level>
     </proficiency>
-    <proficiency id="121" name="Master Umbral 2H Axe">
+    <proficiency id="121" name="Umbral Master Chopper">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2856,7 +2856,7 @@
             <perk type="skillDamageSpell" value="0.15" skill="axe"/>
         </level>
     </proficiency>
-    <proficiency id="122" name="Master Umbral 2H Sword">
+    <proficiency id="122" name="Umbral Master Slayer">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2876,7 +2876,7 @@
             <perk type="skillDamageSpell" value="0.15" skill="sword"/>
         </level>
     </proficiency>
-    <proficiency id="123" name="Master Umbral 2H Fist">
+    <proficiency id="123" name="Umbral Master Katar">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -2896,7 +2896,7 @@
             <perk type="skillDamageSpell" value="0.15" skill="fist"/>
         </level>
     </proficiency>
-    <proficiency id="124" name="Master Umbral 2H Bow">
+    <proficiency id="124" name="Umbral Master Bow">
         <level id="1">
             <perk type="damageAtRange" value="10" range="3"/>
         </level>
@@ -3006,7 +3006,7 @@
             <perk type="damageAtRange" value="4" range="4"/>
         </level>
     </proficiency>
-    <proficiency id="130" name="Umbral 2H Bow">
+    <proficiency id="130" name="Umbral Bow">
         <level id="1">
             <perk type="damageAtRange" value="7" range="3"/>
         </level>
@@ -3074,7 +3074,7 @@
             <perk type="manaOnKill" value="4"/>
         </level>
     </proficiency>
-    <proficiency id="134" name="Cobra 1H Club">
+    <proficiency id="134" name="Cobra Club">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -3095,7 +3095,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="135" name="Cobra 1H Axe">
+    <proficiency id="135" name="Cobra Axe">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -3116,7 +3116,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="136" name="Cobra 1H Sword">
+    <proficiency id="136" name="Cobra Sword">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -3137,7 +3137,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="137" name="Cobra 2H Fist">
+    <proficiency id="137" name="Cobra Bo">
         <level id="1">
             <perk type="lifeLeech" value="0.1"/>
         </level>
@@ -3158,7 +3158,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="138" name="Cobra 2H Distance">
+    <proficiency id="138" name="Cobra Crossbow">
         <level id="1">
             <perk type="skillBonus" value="1" skill="distance"/>
         </level>
@@ -3180,7 +3180,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="139" name="Lion 1H Club">
+    <proficiency id="139" name="Lion Hammer">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -3201,7 +3201,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="140" name="Lion 1H Axe">
+    <proficiency id="140" name="Lion Axe">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -3222,7 +3222,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="141" name="Lion 1H Sword">
+    <proficiency id="141" name="Lion Longsword">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -3243,7 +3243,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="142" name="Lion 2H Fist">
+    <proficiency id="142" name="Lion Claws">
         <level id="1">
             <perk type="critExtraDamage" value="0.13"/>
         </level>
@@ -3264,7 +3264,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="143" name="Lion 2H Distance">
+    <proficiency id="143" name="Lion Longbow">
         <level id="1">
             <perk type="skillBonus" value="1" skill="distance"/>
         </level>
@@ -3286,7 +3286,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="144" name="Falcon 1H Club">
+    <proficiency id="144" name="Falcon Mace">
         <level id="1">
             <perk type="shieldMod" value="1"/>
         </level>
@@ -3307,7 +3307,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="145" name="Falcon 2H Sword">
+    <proficiency id="145" name="Falcon Longsword">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -3328,7 +3328,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="146" name="Falcon 2H Axe">
+    <proficiency id="146" name="Falcon Battleaxe">
         <level id="1">
             <perk type="defense" value="1"/>
         </level>
@@ -3349,7 +3349,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="147" name="Falcon 2H Fist">
+    <proficiency id="147" name="Falcon Sai">
         <level id="1">
             <perk type="lifeLeech" value="0.1"/>
         </level>
@@ -3371,7 +3371,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="148" name="Falcon 2H Distance">
+    <proficiency id="148" name="Falcon Bow">
         <level id="1">
             <perk type="attackDamage" value="1"/>
         </level>
@@ -3427,7 +3427,7 @@
             <perk type="skillDamageAuto" value="0.04" skill="distance"/>
         </level>
     </proficiency>
-    <proficiency id="151" name="Cobra 1H Rod">
+    <proficiency id="151" name="Cobra Rod">
         <level id="1">
             <perk type="lifeOnHit" value="3"/>
         </level>
@@ -3449,7 +3449,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="152" name="Cobra 1H Wand">
+    <proficiency id="152" name="Cobra Wand">
         <level id="1">
             <perk type="manaOnHit" value="3"/>
         </level>
@@ -3469,7 +3469,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="153" name="Lion 1H Rod">
+    <proficiency id="153" name="Lion Rod">
         <level id="1">
             <perk type="lifeOnHit" value="3"/>
         </level>
@@ -3511,7 +3511,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="155" name="Falcon 1H Rod">
+    <proficiency id="155" name="Falcon Rod">
         <level id="1">
             <perk type="lifeOnHit" value="3"/>
         </level>
@@ -3533,7 +3533,7 @@
             <perk type="critExtraDamage" value="0.05"/>
         </level>
     </proficiency>
-    <proficiency id="156" name="Falcon 1H Wand">
+    <proficiency id="156" name="Falcon Wand">
         <level id="1">
             <perk type="manaOnHit" value="3"/>
         </level>
@@ -3614,7 +3614,7 @@
             <perk type="skillBonus" value="1" skill="distance"/>
         </level>
     </proficiency>
-    <proficiency id="161" name="Sword 1H Ice Rapier">
+    <proficiency id="161" name="Ice Rapier">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.05"/>
         </level>
@@ -3889,7 +3889,7 @@
             <perk type="skillBonus" value="1" skill="sword"/>
         </level>
     </proficiency>
-    <proficiency id="207" name="Destruction 2H Club">
+    <proficiency id="207" name="Hammer of Destruction">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.1"/>
         </level>
@@ -3907,7 +3907,7 @@
             <perk type="skillDamageSpell" value="0.1" skill="club"/>
         </level>
     </proficiency>
-    <proficiency id="208" name="Destruction 1H Club">
+    <proficiency id="208" name="Mace of Destruction">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.1"/>
         </level>
@@ -3925,7 +3925,7 @@
             <perk type="skillDamageSpell" value="0.1" skill="club"/>
         </level>
     </proficiency>
-    <proficiency id="209" name="Destruction 1H Axe">
+    <proficiency id="209" name="Axe of Destruction">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.1"/>
         </level>
@@ -3943,7 +3943,7 @@
             <perk type="skillDamageSpell" value="0.1" skill="axe"/>
         </level>
     </proficiency>
-    <proficiency id="210" name="Destruction 1H Sword">
+    <proficiency id="210" name="Blade of Destruction">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.1"/>
         </level>
@@ -3961,7 +3961,7 @@
             <perk type="skillDamageSpell" value="0.1" skill="sword"/>
         </level>
     </proficiency>
-    <proficiency id="211" name="Destruction 2H Axe">
+    <proficiency id="211" name="Chopper of Destruction">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.1"/>
         </level>
@@ -3979,7 +3979,7 @@
             <perk type="skillDamageSpell" value="0.1" skill="axe"/>
         </level>
     </proficiency>
-    <proficiency id="212" name="Destruction 2H Sword">
+    <proficiency id="212" name="Slayer of Destruction">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.1"/>
         </level>
@@ -3997,7 +3997,7 @@
             <perk type="skillDamageSpell" value="0.1" skill="sword"/>
         </level>
     </proficiency>
-    <proficiency id="213" name="Destruction 2H Fist">
+    <proficiency id="213" name="Nunchaku of Destruction">
         <level id="1">
             <perk type="critExtraDamageAuto" value="0.1"/>
         </level>
@@ -4015,7 +4015,7 @@
             <perk type="skillDamageSpell" value="0.1" skill="fist"/>
         </level>
     </proficiency>
-    <proficiency id="214" name="Destruction 1H Rod">
+    <proficiency id="214" name="Rod of Destruction">
         <level id="1">
             <perk type="critExtraDamageSpell" value="0.03" element="ice"/>
             <perk type="critExtraDamageSpell" value="0.03" element="earth"/>
@@ -4059,7 +4059,7 @@
             <perk type="skillDamageSpell" value="0.035" skill="distance"/>
         </level>
     </proficiency>
-    <proficiency id="216" name="Destruction 1H Wand">
+    <proficiency id="216" name="Wand of Destruction">
         <level id="1">
             <perk type="critExtraDamageSpell" value="0.03" element="fire"/>
             <perk type="critExtraDamageSpell" value="0.03" element="energy"/>
@@ -5580,7 +5580,7 @@
             <perk type="critExtraDamageSpell" value="0.05" element="ice"/>
         </level>
     </proficiency>
-    <proficiency id="315" name="Amber 2H Crossbow">
+    <proficiency id="315" name="Amber Crossbow">
         <level id="1">
             <perk type="skillDamageAuto" value="0.125" skill="magic"/>
         </level>
@@ -7914,7 +7914,7 @@
             <perk type="critChanceAuto" value="0.015"/>
         </level>
     </proficiency>
-    <proficiency id="454" name="Rending Inferniarch 2H Crossbow">
+    <proficiency id="454" name="Rending Inferniarch Arbalest">
         <level id="1">
             <perk type="critExtraDamage" value="0.48"/>
         </level>
@@ -7943,7 +7943,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="57"/>
         </level>
     </proficiency>
-    <proficiency id="455" name="Siphoning Inferniarch 2H Crossbow">
+    <proficiency id="455" name="Siphoning Inferniarch Arbalest">
         <level id="1">
             <perk type="manaLeech" value="0.05"/>
         </level>
@@ -7972,7 +7972,7 @@
             <perk type="augment" value="0.015" augment="critChance" spellId="57"/>
         </level>
     </proficiency>
-    <proficiency id="456" name="Draining Inferniarch 2H Crossbow">
+    <proficiency id="456" name="Draining Inferniarch Arbalest">
         <level id="1">
             <perk type="lifeLeech" value="0.145"/>
         </level>
